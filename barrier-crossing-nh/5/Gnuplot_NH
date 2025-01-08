@@ -1,0 +1,10 @@
+set xrange[-0.6:1.4]
+set yrange[-3:3]
+set xlabel 'V'
+set ylabel 'P'
+set grid
+set term post eps color solid enh
+set output "Plot_Q2_NH.eps"
+plot 'pos_vel.dat' u 2:3 w p ps 1 pt 7
+pause -1 "Hit return to continue"
+
