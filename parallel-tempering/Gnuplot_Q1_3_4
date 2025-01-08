@@ -1,0 +1,11 @@
+set xrange[0:1000]
+set yrange[0:0.13]
+set xlabel 'Position'
+set ylabel 'Energy Distribution'
+set title 'ratio between average energy of system 1 and the square of Nparticles  as a function of Nparticles' 
+set grid
+set term post eps color solid enh
+set output "Plot_Q1_3_4.eps"
+plot 'DistributionData4.dat' u 2:4 w l lw 2 lc 1
+pause -1 "Hit return to continue"
+

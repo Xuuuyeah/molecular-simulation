@@ -1,0 +1,11 @@
+set xrange[0:1000]
+set yrange[0:1]
+set xlabel 'Position'
+set ylabel 'Distribution'
+set title 'Distribution of Position of 1st particle'
+set grid
+set term post eps color solid enh
+set output "Plot_Q1_2.eps"
+plot 'DistributionData_2.dat' u 2:4 title 'T=0.05' w l lw 2 lc 1, 'DistributionData_2.dat' u 2:10 title 'T=0.025' w l lw 2 lc 2,'DistributionData_2.dat' u 2:14 title 'T=0.01' w l lw 2 lc 3, 'DistributionData_2.dat' u 2:18 title 'T=0.005' w l lw 2 lc 4,'DistributionData_2.dat' u 2:22 title 'T=0.0025' w l lw 2 lc 5, 'DistributionData_2.dat' u 2:26 title 'T=0.001' w l lw 2 lc 6
+pause -1 "Hit return to continue"
+

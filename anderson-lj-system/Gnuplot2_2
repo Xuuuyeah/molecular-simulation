@@ -1,0 +1,10 @@
+set xrange[0:50000]
+set yrange[0.000:20]
+set xlabel 'MD step'
+set ylabel 'Temperature'
+set title 'Temperature change with MD step'
+set grid
+set term post eps color solid enh
+set output "Plot_Q2_2.eps"
+plot 'MDSimulation.log' u 2:10 w l lw 2 lc 1
+pause -1 "Hit return to continue"
